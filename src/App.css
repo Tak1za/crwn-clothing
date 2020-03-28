@@ -2,3 +2,8 @@ body {
 	font-family: 'Nova Mono', monospace;
 	padding: 20px 50px;
 }
+
+a {
+	text-decoration: none;
+	color: black;
+}
