@@ -26,15 +26,12 @@ class App extends Component {
 
 				//Check the snapshot of userRef to monitor any changes and accordingly update the state
 				userRef.onSnapshot(snapshot => {
-					this.setState(
-						{
-							currentUser: {
-								id: snapshot.id,
-								...snapshot.data()
-							}
-						},
-						() => console.log(this.state)
-					);
+					this.setState({
+						currentUser: {
+							id: snapshot.id,
+							...snapshot.data()
+						}
+					});
 				});
 			}
 			this.setState({ currentUser: userAuth });
