@@ -20,9 +20,11 @@
 	border: none;
 	margin: 5px;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
 
 	&:hover {
-		@include hoverStyle()
+		@include hoverStyle();
 	}
 
 	&.google-sign-in {
@@ -31,7 +33,17 @@
 		border: 1px solid white;
 
 		&:hover {
-			@include hoverStyle()
+			@include hoverStyle();
+		}
+	}
+
+	&.inverted {
+		@include hoverStyle();
+
+		&:hover{
+			background-color: black;
+			color: white;
+			border: none;
 		}
 	}
 }
