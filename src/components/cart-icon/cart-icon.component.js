@@ -1,12 +1,18 @@
 import React from 'react';
 import { ReactComponent as ShoppingIcon } from '../../assets/cart.svg';
 import './cart-icon.styles.scss';
+import { connect } from 'react-redux';
+import { toggleCartDropdown } from '../../redux/cart/cart.actions';
 
-const CartIcon = props => (
-	<div className="cart-icon">
+const CartIcon = ({ toggleCartDropdown }) => (
+	<div className="cart-icon" onClick={toggleCartDropdown}>
 		<ShoppingIcon className="shopping-icon" />
 		<span className="item-count">0</span>
 	</div>
 );
 
-export default CartIcon;
+const mapDispathToProps = dispath => ({
+	toggleCartDropdown: () => dispath(toggleCartDropdown())
+});
+
+export default connect(null, mapDispathToProps)(CartIcon);
