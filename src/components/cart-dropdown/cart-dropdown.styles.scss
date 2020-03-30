@@ -10,19 +10,16 @@
 	top: 90px;
 	right: 40px;
 	z-index: 5;
-	overflow-y: auto;
 
 	.cart-items {
 		height: 240px;
-
-		.image {
-			height: 150px;
-			width: 120px;
-			margin: 5px 0;
-		}
+		overflow-y: auto;
 	}
 
-	button {
-		margin-top: auto;
+	button{
+		position: absolute;
+		left: 32px;
+		bottom: 5px;
 	}
 }
+
