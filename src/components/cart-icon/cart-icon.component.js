@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { toggleCartDropdown } from '../../redux/cart/cart.actions';
 
 const CartIcon = ({ toggleCartDropdown, cartItems }) => (
-	<div className="cart-icon" onClick={toggleCartDropdown}>
+	<div className="cart-icon" onClick={cartItems.length !== 0 ? toggleCartDropdown: null} >
 		<ShoppingIcon className="shopping-icon" />
 		<span className="item-count">{cartItems.length}</span>
 	</div>
