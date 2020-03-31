@@ -6,10 +6,10 @@ import { toggleCartDropdown } from '../../redux/cart/cart.actions';
 import { selectCartItemsCount } from '../../redux/cart/cart.selectors';
 import { createStructuredSelector } from 'reselect';
 
-const CartIcon = ({ toggleCartDropdown, itemCount }) => (
+const CartIcon = ({ itemCount, toggleCartDropdown }) => (
 	<div
 		className="cart-icon"
-		onClick={itemCount !== 0 ? toggleCartDropdown : null}
+		onClick={toggleCartDropdown}
 	>
 		<ShoppingIcon className="shopping-icon" />
 		<span className="item-count">{itemCount}</span>
