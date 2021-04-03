@@ -10,7 +10,14 @@ Authentication is powered by **Firebase**, and payments are operating using **St
 
 ## Screenshots
 
+### Home
 ![Home](https://user-images.githubusercontent.com/18700114/113478544-0ccad200-94a7-11eb-92df-c7552ae94184.PNG)
+
+### Shop
 ![Shop](https://user-images.githubusercontent.com/18700114/113478545-0d636880-94a7-11eb-8bfb-3699e8b7e0d0.PNG)
+
+### Cart
 ![Cart](https://user-images.githubusercontent.com/18700114/113478540-0a687800-94a7-11eb-9e1e-d64a1fd6121f.PNG)
+
+### Checkout
 ![Checkout](https://user-images.githubusercontent.com/18700114/113478542-0c323b80-94a7-11eb-8ccc-30b61cc1837f.PNG)
